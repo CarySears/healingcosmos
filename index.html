@@ -509,6 +509,62 @@
         color: rgba(21, 20, 20, 0.74);
       }
 
+      .profile-photo {
+        position: relative;
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 30px 60px rgba(15, 44, 207, 0.18);
+        min-height: 420px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        background: radial-gradient(circle at 20% 20%, rgba(125, 109, 247, 0.2), transparent 60%),
+          radial-gradient(circle at 80% 0%, rgba(0, 130, 80, 0.18), transparent 55%), #0d1a3b;
+      }
+
+      .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-photo figcaption {
+        position: absolute;
+        left: clamp(1.25rem, 3vw, 1.9rem);
+        right: clamp(1.25rem, 3vw, 1.9rem);
+        bottom: clamp(1.25rem, 3vw, 1.9rem);
+        background: linear-gradient(
+          135deg,
+          rgba(13, 26, 59, 0.72),
+          rgba(77, 61, 208, 0.58)
+        );
+        color: rgba(255, 255, 255, 0.9);
+        padding: clamp(1.25rem, 3vw, 1.75rem);
+        border-radius: 18px;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 18px 40px rgba(13, 26, 59, 0.32);
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .profile-photo figcaption h3 {
+        color: var(--white);
+        margin: 0;
+      }
+
+      .profile-photo figcaption p {
+        color: rgba(255, 255, 255, 0.9);
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      .profile-photo .btn-ghost {
+        color: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        padding: 0.65rem 1.4rem;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
       .testimonial-grid {
         margin-top: 3rem;
         display: grid;
@@ -981,14 +1037,17 @@
               </a>
             </div>
           </div>
-          <div class="panel">
-            <h3>Begin with Gentle Support</h3>
-            <p>
-              Not ready to book just yet? Start with a free 21-day self-care journey delivered straight to your
-              inbox—filled with mindful prompts and somatic practices to ground your cosmic insight.
-            </p>
-            <a class="btn btn-ghost" href="#newsletter">Join 21 Days of Self-Care →</a>
-          </div>
+            <figure class="profile-photo">
+              <img src="JaiIMG_2135.JPG" alt="Jai Lynn McPheron smiling in a peaceful outdoor setting" loading="lazy" />
+              <figcaption>
+                <h3>Begin with Gentle Support</h3>
+                <p>
+                  Not ready to book just yet? Start with a free 21-day self-care journey delivered straight to your
+                  inbox—filled with mindful prompts and somatic practices to ground your cosmic insight.
+                </p>
+                <a class="btn btn-ghost" href="#newsletter">Join 21 Days of Self-Care →</a>
+              </figcaption>
+            </figure>
         </div>
       </section>
 
