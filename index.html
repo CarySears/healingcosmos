@@ -293,7 +293,7 @@
         color: var(--fresh-green);
         font-weight: 600;
         display: inline-flex;
-        align-items: center;
+        alignments: center;
         gap: 0.45rem;
         margin-bottom: 1rem;
       }
@@ -433,7 +433,7 @@
 
       .supporting-tag {
         display: inline-flex;
-        align-items: center;
+       	align-items: center;
         gap: 0.4rem;
         padding: 0.4rem 0.85rem;
         border-radius: 999px;
@@ -449,7 +449,7 @@
         display: grid;
         gap: 2.5rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        align-items: center;
+        align-items: center.
       }
 
       .panel {
@@ -489,7 +489,7 @@
         border-radius: 20px;
         padding: 2.4rem;
         box-shadow: 0 16px 38px rgba(235, 195, 255, 0.22);
-        position: relative;
+        position: relative.
       }
 
       .testimonial-card::before {
@@ -499,7 +499,7 @@
         left: 1.8rem;
         font-size: 4rem;
         color: rgba(125, 109, 247, 0.25);
-        line-height: 1;
+        line-height: 1.
       }
 
       .testimonial-footer {
@@ -531,7 +531,7 @@
         color: var(--white);
         border-radius: 28px;
         padding: clamp(2.5rem, 5vw, 3.5rem);
-        display: grid;
+        display: grid.
         gap: 1.5rem;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         align-items: center;
@@ -539,16 +539,16 @@
 
       .cta-banner h3 {
         color: var(--white);
-        margin: 0;
+        margin: 0.
       }
 
       .cta-banner p {
         color: rgba(255, 255, 255, 0.86);
-        margin: 0;
+        margin: 0.
       }
 
       .contact-grid {
-        display: grid;
+        display: grid.
         gap: 2.5rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       }
@@ -587,4 +587,610 @@
       .contact-form textarea:focus {
         outline: none;
         border-color: var(--deep-indigo);
-        box-shadow: 0 0 0 4px rgba(77, 61, 208, 0.15
+        box-shadow: 0 0 0 4px rgba(77, 61, 208, 0.15);
+      }
+
+      .contact-form textarea {
+        min-height: 140px;
+        resize: vertical.
+      }
+
+      .footer {
+        background: var(--ink);
+        color: rgba(255, 255, 255, 0.84);
+        padding: 3rem 1.5rem.
+      }
+
+      .footer-inner {
+        max-width: 1100px.
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .footer h4 {
+        color: var(--white).
+      }
+
+      .footer a {
+        color: rgba(255, 255, 255, 0.82).
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 0;
+        display: grid;
+        gap: 0.6rem.
+      }
+
+      .footer-bottom {
+        max-width: 1100px;
+        margin: 2rem auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.72).
+      }
+
+      .footer-bottom a {
+        text-decoration: underline.
+      }
+
+      .login-card {
+        background: var(--white);
+        border-radius: 18px;
+        padding: 2.5rem;
+        box-shadow: 0 18px 40px rgba(79, 141, 142, 0.15);
+        text-align: center.
+        max-width: 720px;
+        margin: 0 auto.
+      }
+
+      .login-card p {
+        margin-bottom: 2rem.
+      }
+
+      .login-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center.
+        gap: 1rem.
+      }
+
+      @media (max-width: 960px) {
+        .nav-toggle {
+          display: inline-flex;
+          align-items: center.
+          gap: 0.45rem.
+        }
+
+        .nav-links {
+          position: fixed.
+          inset: 0;
+          top: 80px.
+          flex-direction: column.
+          background: rgba(255, 255, 255, 0.98).
+          padding: 2.5rem 1.5rem 4rem.
+          transform: translateY(-12px).
+          opacity: 0.
+          pointer-events: none.
+          transition: opacity 200ms ease.
+        }
+
+        .nav-links.open {
+          opacity: 1.
+          pointer-events: auto.
+        }
+
+        .mega-menu {
+          position: static.
+          transform: none.
+          width: 100%.
+          grid-template-columns: 1fr.
+          padding: 1.75rem.
+          opacity: 1.
+          pointer-events: auto.
+          box-shadow: none.
+          border: 1px solid rgba(77, 61, 208, 0.08).
+          display: none.
+        }
+
+        .mega-menu.open {
+          display: grid.
+        }
+
+        .hero {
+          padding-top: 6rem.
+        }
+      }
+
+      @media (max-width: 640px) {
+        .hero-actions {
+          flex-direction: column.
+        }
+
+        .header-inner {
+          padding: 0.75rem 1rem.
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#home">
+          <img src="Healing Cosmos Logo 2025.png" alt="Healing Cosmos logo" />
+          <span>Healing Cosmos</span>
+        </a>
+        <nav class="primary-nav">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+            ☰ Menu
+          </button>
+          <ul class="nav-links" id="primary-navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="has-mega">
+              <button type="button" aria-expanded="false" aria-controls="services-menu">
+                Services
+              </button>
+              <div class="mega-menu" id="services-menu">
+                <div class="mega-card">
+                  <span class="supporting-tag">Mindful Astrology</span>
+                  <h3>Decode Your Celestial Map</h3>
+                  <p>
+                    Explore your birth chart with Jai to uncover purpose, patterns, and seasons of growth.
+                    Receive compassionate, actionable insight that helps you live intentionally with the
+                    stars instead of feeling ruled by them.
+                  </p>
+                  <a href="#services">Discover the Astrology Journey →</a>
+                </div>
+                <div class="mega-card">
+                  <span class="supporting-tag">Somatic Services</span>
+                  <h3>Embody Your Healing</h3>
+                  <p>
+                    Integrate nervous system care, mindful movement, and energy work tailored to your chart.
+                    Experience practices drawn from yoga, qigong, and mindfulness to anchor cosmic insight
+                    into your body.
+                  </p>
+                  <a href="#services">Explore Somatic Support →</a>
+                </div>
+                <div class="mega-card">
+                  <span class="supporting-tag">Mindful Health &amp; Wellness Coaching</span>
+                  <h3>Align Intention with Action</h3>
+                  <p>
+                    Transform insight into gentle, doable steps. Jai coaches you to weave celestial wisdom
+                    into daily rituals, habits, and choices that honor your goals and inner rhythm.
+                  </p>
+                  <a href="#services">Begin Mindful Coaching →</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy">
+            <span class="section-eyebrow">Mindful Astrologer</span>
+            <h1>Healing Coasmos by Jai McPheron</h1>
+            <p class="lead">Healing the Whole Being with Mindful Astrology.</p>
+            <p>
+              Are you ready to enter a life filled with purpose, joy, and fulfillment? Your life is too
+              precious to drift. Together we’ll lovingly decode your birth chart, so you can work with the
+              energy of the stars instead of feeling swept along by them.
+            </p>
+            <p>
+              As we map what’s unfolding, Jai offers the tools that serve you most—from yoga and qigong, to
+              mindfulness, energy healing, and nervous system care—each aligned to your astrology and your
+              intentions.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Book an Appointment</a>
+              <a class="btn btn-secondary" href="#services">Explore Services</a>
+            </div>
+          </div>
+          <aside class="hero-aside">
+            <h3>Embark on a Transformational Journey Today</h3>
+            <ul>
+              <li>Mindful astrology sessions that reflect where you are and where you’re headed.</li>
+              <li>Somatic practices to embody cosmic insight with steadiness and grace.</li>
+              <li>Integrative coaching to align your choices with your soul-led intentions.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-inner">
+          <span class="section-eyebrow">About Healing Cosmos</span>
+          <div class="about-card">
+            <div>
+              <h2>Helping You Live in Harmony with Your Stars</h2>
+              <p>
+                Healing Cosmos is Jai McPheron’s sanctuary for mindful astrology and integrative care. Each
+                session invites you to live intentionally—grounded in your cosmic blueprint, held with
+                compassion, and supported by tools that nourish your whole being.
+              </p>
+              <p>
+                As Jai has learned, we can use the energy of the stars, or the stars will use us to nudge us
+                onto our true path. When we explore your celestial map together, you’ll receive meaningful
+                insight, embodied practices, and gentle accountability that keep you aligned.
+              </p>
+            </div>
+            <blockquote>
+              “As we work together to decode your map, I will share the tools you will benefit most from. Like
+              any tool, it can sit on the shelf or you can use it. I coach you using these tools that I feel
+              best align with your goals and intentions.”<br /><br />
+              <strong>— Jai McPheron</strong>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="section-inner">
+          <span class="section-eyebrow">Healing Cosmos Services</span>
+          <h2>Choose the Support That Speaks to Your Soul</h2>
+          <p>
+            Each journey weaves astrology, somatic wisdom, and mindful coaching so you can create the life
+            you’ve always envisioned. Explore the pathways below to see how Jai can support your next aligned
+            step.
+          </p>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Mindful Astrology</h3>
+              <p>
+                Discover the deeper story of your birth chart, current transits, and upcoming chapters.
+                Sessions include recordings so you can revisit the guidance as often as you like—supporting
+                integration long after our time together.
+              </p>
+              <div class="service-meta">Includes tailored reflections &amp; recording</div>
+              <a class="btn btn-ghost" href="#contact">Schedule a Reading →</a>
+            </article>
+            <article class="service-card">
+              <h3>Somatic Services</h3>
+              <p>
+                Anchor cosmic insight into your body with practices from yoga, tai chi, qigong, energy work,
+                and nervous system healing. Sessions invite ease, spaciousness, and embodied confidence.
+              </p>
+              <div class="service-meta">Mindful movement • Breath • Energy balancing</div>
+              <a class="btn btn-ghost" href="#contact">Book Somatic Support →</a>
+            </article>
+            <article class="service-card">
+              <h3>Mindful Health &amp; Wellness Coaching</h3>
+              <p>
+                Translate spiritual awareness into daily devotion. Together we design rituals, habits, and
+                gentle action steps that honor your chart, your goals, and your capacity right now.
+              </p>
+              <div class="service-meta">Custom coaching plans &amp; ongoing mentorship</div>
+              <a class="btn btn-ghost" href="#contact">Start Coaching →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner split-panel">
+          <div class="panel accent">
+            <span class="section-eyebrow">Service Information</span>
+            <h3>Not Sure Where to Begin?</h3>
+            <p>
+              Life’s turning points aren’t always clear-cut. Take a breath, then let Jai help you identify the
+              path that feels right for this moment.
+            </p>
+            <ul>
+              <li>Receive a personalized recommendation rooted in your astrological rhythm.</li>
+              <li>Clarify the kind of support—cosmic, somatic, or coaching—that suits your needs.</li>
+              <li>
+                Step forward with a plan to cultivate presence, empowerment, and aligned action.
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Take the “Find Your Path” Quiz →</a>
+          </div>
+          <div class="panel">
+            <h3>What You Can Expect</h3>
+            <p>
+              Every session is a conversation, a co-creation, and a sacred space to reconnect with your truth.
+              Jai meets you where you are, weaving astrology with somatic practices and mindful coaching so you
+              can integrate insight with embodiment.
+            </p>
+            <p>
+              Whether you’re exploring your chart for the first time or deepening a lifetime of cosmic work,
+              you’ll leave with compassionate clarity and tools you can use immediately.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="meet-jai">
+        <div class="section-inner split-panel">
+          <div>
+            <span class="section-eyebrow">Meet Jai</span>
+            <h2>Your Guide Toward Purposeful Living</h2>
+            <p>
+              Jai McPheron believes we are each extraordinary beings with sacred opportunities for growth in
+              every moment. Since beginning her healing journey in 2001, she has supported people through
+              transitions both monumental and subtle—always with deep compassion and mindful presence.
+            </p>
+            <p>
+              Through mindful astrology, nervous system care, and somatic integration, Jai helps you reconnect
+              with your inner wisdom so you can chart your path with confidence, grace, and heart.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Book a Connection Call (15 Minutes)</a>
+              <a class="btn btn-secondary" href="https://www.imi.earth" target="_blank" rel="noopener">
+                Explore IMI.Earth
+              </a>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Begin with Gentle Support</h3>
+            <p>
+              Not ready to book just yet? Start with a free 21-day self-care journey delivered straight to your
+              inbox—filled with mindful prompts and somatic practices to ground your cosmic insight.
+            </p>
+            <a class="btn btn-ghost" href="#newsletter">Join 21 Days of Self-Care →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="section-inner">
+          <span class="section-eyebrow">Testimonials</span>
+          <h2>Real Stories from the Healing Cosmos Community</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                I received an astrology reading with Jai, and I am so grateful for her insight, intuition, and
+                knowledge! Jai immediately understood my birth chart and how the current astrological conditions
+                interact with my personal chart, which helped me feel validation, acceptance, and self-compassion.
+              </p>
+              <p>
+                She offered important advice based on my chart and the transits happening, so I know where I can
+                take empowered action. I appreciate how relatable and grounded Jai is—thank you for sharing this
+                work and helping us navigate our life paths!
+              </p>
+              <div class="testimonial-footer">— Ashley</div>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                Jai’s blend of astrology and somatics gave me a roadmap and the practices to live it. The
+                recording from our session has become a cherished tool—it keeps revealing new insights every time
+                I listen. I feel more confident, centered, and aligned with my purpose.
+              </p>
+              <div class="testimonial-footer">— Morgan</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-inner">
+          <span class="section-eyebrow">Frequently Asked Questions</span>
+          <h2>Answers to Your Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h4>What can I expect from a Mindful Astrology session?</h4>
+              <p>
+                Each session dives into your natal chart and current transits with compassion and clarity. You’ll
+                receive practical recommendations, a recording of the session, and suggested rituals or practices
+                to support integration.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>How do somatic services complement astrology?</h4>
+              <p>
+                Somatic offerings help you embody the insight from your chart. Jai weaves mindful movement,
+                breathwork, and energy healing to bring balance to your nervous system and anchor cosmic wisdom
+                in your body.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Do I need previous astrology knowledge to work with Jai?</h4>
+              <p>
+                Not at all! Jai meets you exactly where you are—whether you’re brand-new to astrology or a
+                seasoned star student. Sessions are collaborative, educational, and empowering.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Can Jai support ongoing transformation beyond one session?</h4>
+              <p>
+                Yes. Mindful Health &amp; Wellness Coaching provides ongoing mentorship, accountability, and
+                personalized practices so you can continue integrating insight and creating aligned change.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>How do I prepare for my appointment?</h4>
+              <p>
+                Bring your birth date, time, and location if you have them, along with intentions or questions.
+                Consider journaling beforehand to connect with what you’re hoping to nurture or transform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <div class="section-inner">
+          <div class="cta-banner">
+            <div>
+              <h3>Sign Up for the Healing Cosmos Newsletter</h3>
+              <p>
+                Receive mindful astrology insights, seasonal rituals, and gentle reminders to live with
+                intention—straight from Jai to you.
+              </p>
+            </div>
+            <form class="hero-actions" action="#" method="post">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                aria-label="Email address"
+                required
+                style="
+                  flex: 1 1 220px;
+                  padding: 0.85rem 1.1rem;
+                  border-radius: 12px;
+                  border: none;
+                  max-width: 320px;
+                "
+              />
+              <button class="btn btn-secondary" type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-inner contact-grid">
+          <div class="contact-card">
+            <span class="section-eyebrow">Contact</span>
+            <h2>Let’s Begin Your Next Chapter</h2>
+            <p>
+              Share what’s unfolding for you and Jai will respond with available session times and next steps.
+              You can also explore Jai’s broader offerings with Integrative Mindfulness Institute at
+              <a href="https://www.imi.earth" target="_blank" rel="noopener">IMI.earth</a>.
+            </p>
+            <ul>
+              <li>Email: <a href="mailto:hello@healingcosmos.com">hello@healingcosmos.com</a></li>
+              <li>Newsletter: Sign up above for seasonal guidance</li>
+              <li>Community updates and mindful offerings year-round</li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" required />
+              </div>
+              <div>
+                <label for="service">Which service speaks to you?</label>
+                <input type="text" id="service" name="service_interest" placeholder="Mindful Astrology, Somatic Services, Coaching..." />
+              </div>
+              <div>
+                <label for="message">How can Jai support you?</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="login">
+        <div class="section-inner">
+          <div class="login-card">
+            <h2>Client Login</h2>
+            <p>
+              Healing Cosmos members can access session notes, recordings, and resources through the secure
+              client portal.
+            </p>
+            <div class="login-actions">
+              <a class="btn btn-primary" href="https://healingcosmos.clientlogin.example" target="_blank" rel="noopener">
+                Log In
+              </a>
+              <a class="btn btn-secondary" href="#contact">Request Access</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <h4>Healing Cosmos</h4>
+          <p>
+            Mindful astrology and integrative somatic support by Jai McPheron—helping you cultivate a life
+            steeped in purpose, joy, and aligned action.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Client Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="#contact">Book an Appointment</a></li>
+            <li><a href="#newsletter">Join the Newsletter</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Healing Cosmos LLC. All rights reserved.</span>
+        <span>Website by Jai McPheron</span>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const megaToggle = document.querySelector(".has-mega > button");
+      const megaMenu = document.querySelector(".mega-menu");
+
+      const toggleNav = () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+        if (!isOpen) {
+          megaMenu?.classList.remove("open");
+          megaToggle?.setAttribute("aria-expanded", "false");
+        }
+      };
+
+      navToggle?.addEventListener("click", toggleNav);
+
+      megaToggle?.addEventListener("click", (event) => {
+        if (window.matchMedia("(max-width: 960px)").matches) {
+          event.preventDefault();
+          const isOpen = megaMenu.classList.toggle("open");
+          megaToggle	setAttribute("aria-expanded", String(isOpen));
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          navLinks.classList.contains("open") &&
+          !event.target.closest(".primary-nav")
+        ) {
+          navLinks.classList.remove("open");
+          navToggle	setAttribute("aria-expanded", "false");
+          megaMenu?.classList.remove("open");
+          megaToggle?.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (!window.matchMedia("(max-width: 960px)").matches) {
+          megaMenu?.classList.remove("open");
+          megaToggle?.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
