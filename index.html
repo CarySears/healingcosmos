@@ -307,9 +307,31 @@
       }
 
       .hero {
+        position: relative;
         padding-top: clamp(6rem, 10vw, 9rem);
         padding-bottom: clamp(4rem, 7vw, 8rem);
-        background: radial-gradient(circle at top right, #f8f2ff 0%, #f5f7ff 36%, #f1f5ed 70%);
+        background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1600&q=80")
+          center/cover fixed no-repeat;
+        color: var(--ink);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(15, 44, 207, 0.45),
+            rgba(0, 130, 80, 0.35)
+          ),
+          radial-gradient(circle at top right, rgba(248, 242, 255, 0.6), rgba(241, 245, 237, 0.4));
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .hero .section-inner {
+        position: relative;
+        z-index: 1;
       }
 
       .hero-grid {
@@ -317,6 +339,14 @@
         gap: 2.5rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         align-items: center;
+      }
+
+      .hero-copy {
+        background: rgba(255, 255, 255, 0.82);
+        padding: clamp(1.8rem, 3vw, 2.4rem);
+        border-radius: 24px;
+        box-shadow: 0 30px 60px rgba(13, 79, 61, 0.15);
+        backdrop-filter: blur(6px);
       }
 
       .hero-copy p.lead {
@@ -332,10 +362,11 @@
       }
 
       .hero-aside {
-        background: linear-gradient(180deg, rgba(77, 61, 208, 0.08), rgba(0, 130, 80, 0.08));
+        background: rgba(255, 255, 255, 0.78);
         border-radius: 20px;
         padding: 2rem;
-        box-shadow: 0 12px 38px rgba(97, 173, 237, 0.16);
+        box-shadow: 0 12px 38px rgba(97, 173, 237, 0.2);
+        backdrop-filter: blur(6px);
       }
 
       .hero-aside h3 {
