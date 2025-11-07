@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Brooke Healing - Navigate Life's Transitions with Truth</title>
+    
+    <!-- Google Fonts -->
+            <!-- Anna's Authentic Brand Fonts with Optimized Loading -->
+        <style>
+            @font-face {
+                font-family: 'Ostia Antica';
+                src: url('./Ostia_Antica_WEB-Regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap; /* Fallback text shown immediately, then swapped */
+            }
+            
+            @font-face {
+                font-family: 'ITC Clearface';
+                src: url('./ITCClearFaceReg.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            
+            @font-face {
+                font-family: 'Brandon Grotesque';
+                src: url('./BrandonGrotesque-Medium.woff2') format('woff2');
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+        </style>
+    
+            <style>
+            :root {
+                /* Anna's Brand Colors - Clean Sand & Sea */
+                --primary-color: #164a50; /* sea - for all text */
+                --accent-color: #164a50; /* sea - for all text */
+                --text-color: #164a50; /* sea - for all text */
+                --background-color: #f2ede2; /* sand - for all backgrounds */
+                --shell-color: #f3d9d0; /* shell */
+                --sand-color: #f2ede2; /* sand */
+                --ochre-color: #ce8f29;
+                --sea-color: #164a50;
+                --sky-color: #a3b6e5;
+                --rust-color: #9b4d32;
+                --coral-color: #e27756;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Animation Keyframes */
+            @keyframes fadeInFromLeft {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+        body {
+            font-family: 'Brandon Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography Hierarchy - Anna's Authentic Fonts with Fallbacks */
+        h1, .h1 {
+            font-family: 'Ostia Antica', 'Playfair Display', 'Times New Roman', Georgia, serif;
+            font-weight: normal;
+            font-size: clamp(2rem, 4vw, 3.5rem); /* Responsive typography */
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        h2, .h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-weight: normal;
+            font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive typography */
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h3, h4, h5, h6 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-weight: normal;
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem); /* Responsive typography */
+            line-height: 1.4;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        p, body, .body {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: clamp(0.9rem, 2vw, 1rem); /* Responsive typography */
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Section Subheading Style */
+        .section-subheading {
+            font-family: 'Ostia Antica', 'Playfair Display', 'Times New Roman', Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: normal;
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Header */
+        header {
+            background: var(--background-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Ostia Antica', 'Playfair Display', 'Times New Roman', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: normal;
+            color: var(--text-color);
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            padding: 12px 16px; /* Improved touch targets */
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 44px; /* iOS recommended touch target size */
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--sky-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-color);
+            background: rgba(163, 182, 229, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .nav-links a:hover::after {
+            width: 80%;
+        }
+
+        .nav-links a.active {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .nav-links a.active::after {
+            width: 80%;
+        }
+
+        /* Hero Section with Parallax Background */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-parallax-bg {
+            position: absolute;
+            top: -10vh;
+            left: -10vw;
+            width: 120vw;
+            height: 120vh;
+            background-image: url('https://images.unsplash.com/photo-1518715159541-e12050b5dd1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzQ4Mjd8MHwxfHNlYXJjaHwyNXx8bWFyYmxlfGVufDB8fHx8MTc1MjAwNDQwMHww&ixlib=rb-4.1.0&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(22, 74, 80, 0.6);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            margin: 6rem auto 0;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            color: var(--text-color);
+            background: rgba(242, 237, 226, 0.95); /* Semi-transparent sand background */
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-family: 'Ostia Antica', 'Playfair Display', 'Times New Roman', Georgia, serif;
+            font-size: 2.4rem;
+            color: var(--text-color);
+            margin-bottom: 1.2rem;
+            line-height: 1.3;
+            font-weight: 700;
+            /* Fade in from left animation */
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: fadeInFromLeft 1.2s ease-out 0.5s forwards;
+        }
+
+        .hero-subheading {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .hero-quote {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-style: italic;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .hero-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent; /* remove outer square */
+            padding: 0; /* no extra padding around image */
+            border-radius: 0;
+            backdrop-filter: none;
+            box-shadow: none;
+        }
+
+        .anna-hero-image {
+            width: 260px;
+            height: 360px; /* Portrait orientation */
+            border-radius: 15px;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.3rem;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .anna-hero-image::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border-radius: 15px;
+            background: transparent;
+            z-index: -1;
+        }
+
+        .anna-hero-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 15px;
+            box-shadow: inset 0 0 0 8px var(--background-color); /* uniform inner frame without resizing image */
+            pointer-events: none;
+        }
+
+        .anna-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* avoid scaling artifacts */
+            object-position: center center;
+            border-radius: 15px;
+        }
+
+        /* Parallax Services Section */
+        .parallax-services-wrapper {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .parallax-services-bg {
+            position: absolute;
+            top: -10vh;
+            left: -10vw;
+            width: 120vw;
+            height: 120vh;
+            background-image: url('AnnaParalax1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            will-change: transform;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            z-index: 1;
+        }
+
+        .parallax-services-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(242, 237, 226, 0.3);
+            z-index: 2;
+        }
+
+        .cta-button {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: inline-block;
+            background: var(--background-color);
+            color: var(--text-color);
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(22, 74, 80, 0.3);
+            text-shadow: none;
+            border: 2px solid var(--text-color);
+        }
+
+        .cta-button:hover {
+            background: var(--text-color);
+            color: var(--background-color);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(22, 74, 80, 0.4);
+        }
+
+        .cta-subtitle {
+            display: block;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: var(--background-color);
+        }
+
+        .about-hero-image {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 3rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .about-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            font-weight: 400;
+        }
+
+        .quote {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-style: italic;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            border-left: 4px solid #e27756;
+            padding-left: 20px;
+            margin: 2rem 0;
+            font-weight: 400;
+        }
+
+        /* Services Section */
+        .services {
+            position: relative;
+            z-index: 3;
+            padding: 80px 0;
+            background: transparent;
+        }
+
+        .services .container {
+            background: rgba(242, 237, 226, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .services h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #e27756;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .service-image {
+            width: 100%;
+            aspect-ratio: 3 / 2; /* uniform size across all three cards */
+            height: auto;
+            overflow: hidden;
+            contain: layout paint; /* prevent cross-effects from content sizing */
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* consistent visual fill across images */
+            object-position: center center;
+            image-rendering: -webkit-optimize-contrast;
+            background: var(--background-color);
+            transition: transform 0.3s ease;
+            image-rendering: crisp-edges; /* hint for sharper scaling where supported */
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            flex: 1;
+            padding: 2rem 2.5rem 0 2.5rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 280px; /* normalize text block height across cards */
+        }
+
+        .service-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service-card .service-button {
+            margin: auto 2.5rem 2.5rem 2.5rem;
+            margin-top: auto; /* ensures buttons align across equal-height content */
+            padding: 12px 25px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .service-button {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--text-color);
+            color: var(--background-color);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--text-color);
+            margin-top: auto;
+        }
+
+        .service-button:hover {
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .secondary-cta-button {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--text-color);
+            color: var(--background-color);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--text-color);
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(22, 74, 80, 0.3);
+        }
+
+        .secondary-cta-button:hover {
+            background: var(--background-color);
+            color: var(--text-color);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(22, 74, 80, 0.4);
+        }
+
+        /* Quiz Section */
+        .quiz-section {
+            position: relative;
+            z-index: 3;
+            padding: 80px 0;
+            background: transparent;
+            text-align: center;
+        }
+
+        .quiz-section .container {
+            background: rgba(242, 237, 226, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .quiz-section h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .quiz-section p {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-weight: 400;
+        }
+
+        .sparkle {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin: 1rem 0;
+        }
+
+        /* Meet Anna Section */
+        .meet-anna {
+            position: relative;
+            z-index: 3;
+            padding: 80px 0;
+            background: transparent;
+        }
+
+        .meet-anna .container {
+            background: rgba(242, 237, 226, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .anna-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .anna-image {
+            width: 100%;
+            height: 400px;
+            background: var(--background-color);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.2rem;
+            overflow: hidden;
+        }
+
+        .anna-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(163, 182, 229, 0.3);
+        }
+
+        .anna-text h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .anna-text p {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--background-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            margin-bottom: 1.5rem;
+            color: #164a50;
+            font-weight: 600;
+        }
+
+        .footer-section p, .footer-section a {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: 400;
+        }
+
+        .footer-section a:hover {
+            color: var(--text-color);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--background-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--background-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #9b4d32;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        .footer-bottom p {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .footer-bottom a {
+            color: var(--text-color);
+        }
+
+        /* Reviews Section */
+        .reviews {
+            padding: 80px 0;
+            background: var(--background-color);
+        }
+
+        .reviews h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .reviews .section-subheading {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .reviews-widget {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background: #f2ede2;
+        }
+
+        .faq h2 {
+            font-family: 'ITC Clearface', 'Crimson Text', 'Times New Roman', Georgia, serif;
+            text-align: center;
+            font-size: 2.2rem;
+            color: #164a50;
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+
+        .faq-item {
+            background: #f3d9d0;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            border: 1px solid rgba(22, 74, 80, 0.1);
+        }
+
+        .faq-question {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f3d9d0;
+            color: #164a50;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(22, 74, 80, 0.1);
+        }
+
+        .faq-question:hover {
+            background: rgba(22, 74, 80, 0.05);
+            color: #164a50;
+        }
+
+        .faq-answer {
+            font-family: 'Brandon Grotesque', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding: 1.5rem;
+            display: none;
+            color: #164a50;
+            background: #f3d9d0;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        /* Services Super Menu */
+        .nav-links li {
+            position: relative;
+        }
+
+        .services-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--background-color);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            padding: 20px;
+            min-width: 800px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 10px;
+        }
+
+        .services-dropdown::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--background-color);
+        }
+
+        .nav-links li:hover .services-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(5px);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            font-family: 'ITC Clearface', serif;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .service-item p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: var(--background-color);
+            border-top: 1px solid rgba(22, 74, 80, 0.2);
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            border-bottom: 1px solid rgba(22, 74, 80, 0.1);
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-family: 'Brandon Grotesque', sans-serif;
+            font-weight: 500;
+        }
+
+        .mobile-nav a:hover {
+            background: rgba(22, 74, 80, 0.05);
+        }
+
+        .mobile-nav a.active {
+            color: var(--accent-color);
+            font-weight: 600;
+            background: rgba(255, 111, 97, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .services-dropdown {
+                min-width: 600px;
+            }
+            
+            .services-grid {
+                gap: 20px;
+            }
+            
+            .service-item img {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+                padding: 12px; /* Better touch target */
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+                gap: 8px;
+            }
+
+            .logo img {
+                height: 30px;
+            }
+
+            .hero {
+                height: auto;
+                min-height: 100vh;
+                padding: 100px 0 50px;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.8rem, 5vw, 2.2rem); /* More responsive scaling */
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+                align-items: center;
+                padding: 0 1rem; /* Better mobile spacing */
+            }
+
+            .hero-text {
+                order: 2;
+                padding: 1.5rem; /* Adjusted padding for mobile */
+            }
+
+            .hero-image-container {
+                order: 1;
+                margin-bottom: 2rem;
+            }
+
+            .anna-hero-image {
+                width: 220px;
+                height: 220px;
+                margin: 0 auto;
+            }
+
+            .hero-parallax-bg {
+                background-attachment: scroll;
+            }
+
+            .about-hero-image {
+                height: 200px;
+                margin-bottom: 2rem;
+            }
+
+            .about-content,
+            .anna-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .anna-image {
+                height: 300px;
+                margin-bottom: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .service-image {
+                height: 150px;
+            }
+
+            .service-content {
+                padding: 1.5rem 2rem 0 2rem;
+                min-height: 220px; /* adjusted for tablet */
+            }
+
+            .service-card .service-button {
+                margin: auto 2rem 2rem 2rem;
+                margin-top: auto;
+                padding: 12px 24px; /* Better touch targets */
+                min-height: 44px;
+            }
+
+            .reviews-widget {
+                padding: 0 1rem;
+            }
+
+            .faq-item {
+                margin-bottom: 0.8rem;
+            }
+
+            .faq-question,
+            .faq-answer {
+                padding: 1rem;
+            }
+
+            .faq-question {
+                min-height: 44px; /* Better touch targets for FAQ */
+                display: flex;
+                align-items: center;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .alternative-cta {
+                margin-top: 1.5rem !important;
+            }
+
+            .secondary-cta-button {
+                padding: 12px 24px; /* Improved touch targets */
+                font-size: 0.9rem;
+                min-height: 44px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            /* Improved mobile navigation */
+            .mobile-nav {
+                padding: 1rem 0;
+            }
+
+            .mobile-nav a {
+                padding: 12px 20px; /* Better touch targets */
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Better CTA buttons for mobile */
+            .cta-button {
+                padding: 16px 24px; /* Larger touch targets */
+                min-height: 48px;
+                font-size: 1rem;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* Medium Mobile Screens */
+        @media (max-width: 640px) and (min-width: 481px) {
+            .hero-content {
+                padding: 0 1.5rem;
+            }
+
+            .hero-text {
+                padding: 1.8rem;
+            }
+
+            .service-content {
+                padding: 1.8rem;
+            }
+
+            .container {
+                padding: 0 12px;
+            }
+        }
+
+        /* Mobile Small Screens */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.2rem;
+                gap: 6px;
+            }
+
+            .logo img {
+                height: 25px;
+            }
+
+            .hero {
+                padding: 80px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.5rem, 6vw, 1.8rem); /* Better responsive scaling */
+                line-height: 1.3;
+                margin-bottom: 1rem;
+            }
+
+            .hero-subheading {
+                font-size: clamp(0.9rem, 3vw, 1rem);
+            }
+
+            .hero-description {
+                font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+            }
+
+            .hero-text {
+                padding: 1rem; /* Reduced padding for very small screens */
+            }
+
+            .hero-content {
+                padding: 0 0.5rem; /* Reduced padding for very small screens */
+            }
+
+            .about-hero-image {
+                height: 180px;
+                margin-bottom: 1.5rem;
+            }
+
+            .anna-hero-image {
+                width: 180px;
+                height: 180px;
+            }
+
+            .service-image {
+                height: 120px;
+            }
+
+            .service-content {
+                padding: 1.2rem 1.5rem 0 1.5rem;
+                min-height: 180px; /* adjusted for small screens */
+            }
+
+            .service-content h3 {
+                font-size: clamp(1.2rem, 4vw, 1.3rem);
+            }
+
+            .service-card .service-button {
+                margin: auto 1.5rem 1.5rem 1.5rem;
+                margin-top: auto;
+                padding: 14px 20px; /* Maintain good touch targets */
+                min-height: 48px;
+            }
+
+            .cta-button,
+            .secondary-cta-button {
+                padding: 14px 20px; /* Better touch targets */
+                font-size: clamp(0.85rem, 3vw, 0.9rem);
+                min-height: 48px;
+            }
+
+            .reviews h2,
+            .faq h2 {
+                font-size: clamp(1.5rem, 5vw, 1.8rem);
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            /* Improved small mobile navigation */
+            .mobile-nav a {
+                padding: 14px 16px; /* Slightly larger touch targets */
+                font-size: 1rem;
+            }
+
+            /* Better spacing for small screens */
+            .section-subheading {
+                font-size: clamp(1.2rem, 4vw, 1.6rem);
+                padding: 0 1rem;
+            }
+        }
+
+        /* Parallax Scroll Effect */
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-parallax-bg {
+                background-attachment: fixed;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="AB_1_Primary_sea.png" alt="Anna Brooke Healing Logo">
+                Anna Brooke Healing
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#services">Services <span style="font-size: 0.8em; opacity: 0.7;">▼</span></a>
+                    <div class="services-dropdown">
+                        <div class="services-grid">
+                            <a href="services/healing-and-growth/" class="service-item">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/converted/healing-hero.webp 1x, assets/converted/healing-hero.webp 2x">
+                                    <img
+                                      src="assets/converted/healing-hero.jpg"
+                                      srcset="assets/converted/healing-hero.jpg 1x, assets/converted/healing-hero.jpg 2x"
+                                      sizes="(min-width: 1024px) 250px, 50vw"
+                                      alt="Healing & Growth"
+                                      loading="eager" decoding="async" fetchpriority="high"
+                                      style="width:100%;height:150px;object-fit:cover;object-position:center top;border-radius:8px;margin-bottom:15px;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;"
+                                    />
+                                </picture>
+                                <h3>Healing & Growth</h3>
+                                <p>Breathwork, somatic healing, and emotional integration to help you process grief, anxiety, and life transitions with compassionate support.</p>
+                            </a>
+                            <a href="services/writing-and-creativity/" class="service-item">
+                                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" alt="Writing & Creativity" style="width:100%;height:150px;object-fit:cover;object-position:center top;border-radius:8px;margin-bottom:15px;">
+                                <h3>Writing & Creativity</h3>
+                                <p>Unlock your creative voice through guided writing practices, workshops, and coaching that help you express your truth and find clarity.</p>
+                            </a>
+                            <a href="services/meaningful-life-ceremonies/" class="service-item">
+                                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80" alt="Weddings & Life Ceremonies" style="width:100%;height:150px;object-fit:cover;object-position:center top;border-radius:8px;margin-bottom:15px;">
+                                <h3>Weddings & Other Life Ceremonies</h3>
+                                <p>Create personalized ceremonies for life's meaningful moments - weddings, celebrations, and transitions - that honor your authentic story and values.</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://jnqy5qsbjrj9cjslwrnp.app.clientclub.net/login" target="_blank">Login</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#home" onclick="closeMobileMenu()" class="active">Home</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li><a href="https://jnqy5qsbjrj9cjslwrnp.app.clientclub.net/login" target="_blank" onclick="closeMobileMenu()">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-parallax-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Wherever you are in life's transitions, I help you tell yourself the truth faster.</h1>
+                <p class="hero-subheading">Whether you're navigating change, stepping into a new chapter, or seeking nurturing support for the possibilities ahead—you're in the right place.</p>
+                <p class="hero-description">Anna offers a safe, compassionate space to help you reconnect with your heart, rediscover your inner wisdom, and create a life infused with meaning, purpose, and joy.</p>
+                <p class="hero-quote">Create a life that lights you up from the inside, one healing step at a time, and make your magic happen.</p>
+                <a href="#contact" class="cta-button">
+                    Book a Free Connection call With Anna
+                    <span class="cta-subtitle">15-minutes</span>
+                </a>
+                <div style="margin-top: 0.75rem;">
+                    <a href="#" style="text-decoration: underline; color: var(--sea-color);" aria-label="Join my newsletter for monthly insights">Join my newsletter for monthly insights</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="anna-hero-image">
+                    <img src="Anna_Brooke_original.jpg" alt="Anna Brooke - Your Guide Through Life's Transitions" loading="eager" decoding="async" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-hero-image">
+                <img src="https://images.unsplash.com/photo-1466278313810-9aca9abea861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNzQ4Mjd8MHwxfHNlYXJjaHwxMXx8bmF2aWdhdGV8ZW58MHx8fHwxNzUyMDY3Mzk2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Navigate life's transitions with compass and guidance">
+            </div>
+            <div class="about-content">
+                <div>
+                    <h2>About Anna Brooke Healing</h2>
+                    <p class="section-subheading" style="text-align: left;">Helping you navigate life's transitions by embracing your truth.</p>
+                    <p>Whether you're healing old wounds, seeking creative expression, or honoring a major life moment, Anna offers an integrative path forward—one rooted in presence, compassion, and transformation.</p>
+                    
+                    <div class="quote">
+                        "Through breathwork, empowerment counseling, and restorative self-care, emotional healing and growth seekers are guided toward greater balance and wholeness."
+                    </div>
+                </div>
+                <div>
+                    <p>Writers and creatives are invited to explore their inner truth through workshops, coaching, and soulful writing practices that unlock personal growth.</p>
+                    
+                    <p>For those entering life's pivotal moments—marriage, loss, or new beginnings—Anna crafts bespoke ceremonies that honor the sacredness of your journey.</p>
+                    
+                    <p>No matter your path, each offering is designed to help you mark life's transitions with clarity, heart, and truth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Services Section Wrapper -->
+    <section class="parallax-services-wrapper">
+        <div class="parallax-services-bg"></div>
+        <div class="parallax-services-overlay"></div>
+        
+        <!-- Services Section -->
+        <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subheading">Pick Your Path Below</p>
+            <p style="text-align: center; font-size: 1.1rem; color: var(--text-color); margin-bottom: 2rem;">
+                Explore the path that speaks to your journey today. Discover holistic healing, creative expression, and meaningful rituals—each uniquely tailored to where you are now.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="AnnaMeetingLeft.JPG" alt="Healing and Growth - Peaceful nature scene" loading="eager" decoding="sync" style="object-fit: contain; object-position: center center; image-rendering: -webkit-optimize-contrast; width: 100%; height: 100%;">
+                    </div>
+                    <div class="service-content">
+                        <h3>Healing & Growth</h3>
+                        <p><strong>A Safe Space to Heal, Grow, and Transform.</strong></p>
+                        <p>For those seeking emotional healing and personal growth through breathwork, counseling, or self-care.</p>
+                    </div>
+                    <a href="services/healing-and-growth/" class="service-button">Explore The Healing Path</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1556703588-6eae2585e025?auto=format&q=80&w=1200"
+                          srcset="https://images.unsplash.com/photo-1556703588-6eae2585e025?auto=format&q=80&w=1200 1200w, https://images.unsplash.com/photo-1556703588-6eae2585e025?auto=format&q=80&w=2400 2400w"
+                          sizes="(min-width: 1024px) 33vw, 100vw"
+                          alt="Writing and Creativity - Warm light and inspiration"
+                          loading="eager" decoding="async" fetchpriority="high"
+                          style="object-fit: cover; object-position: center center; width: 100%; height: 100%; image-rendering: -webkit-optimize-contrast;"
+                        />
+                    </div>
+                    <div class="service-content">
+                        <h3>Writing & Creativity</h3>
+                        <p><strong>Find Your Truth Through the Power of Words.</strong></p>
+                        <p>For those using writing to process transitions and unlock creativity.</p>
+                    </div>
+                    <a href="services/writing-and-creativity/" class="service-button">Explore the Writer's Journey</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img
+                          src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&q=80&w=1200"
+                          srcset="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&q=80&w=1200 1200w, https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&q=80&w=2400 2400w"
+                          sizes="(min-width: 1024px) 33vw, 100vw"
+                          alt="Weddings & Life Ceremonies - Sacred ceremonial moments"
+                          loading="eager" decoding="async" fetchpriority="high"
+                          style="object-fit: cover; object-position: center center; width: 100%; height: 100%; image-rendering: -webkit-optimize-contrast;"
+                        />
+                    </div>
+                    <div class="service-content">
+                        <h3 style="white-space: nowrap; font-size: clamp(1rem, 3.5vw, 1.3rem); line-height: 1.2;">Weddings & Life Ceremonies</h3>
+                        <p><strong>For couples or individuals in major life transitions, seeking personalized ceremonies.</strong></p>
+                        <p>Celebrate the moments that matter with ceremonies rooted in your truth and crafted with heart. From unions to new chapters, each ritual is a reflection of your unique journey.</p>
+                    </div>
+                    <a href="services/meaningful-life-ceremonies/" class="service-button">Begin Planning Your Ceremony</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2>Find Your Path</h2>
+            <p class="section-subheading">Not Sure Where to Begin?</p>
+            <p>Life's transitions aren't always clear-cut and neither is the path to healing. If you're not sure where to start, take a moment to breathe… then take this gentle, guided quiz.</p>
+            <p>In just a few minutes, you'll receive a personalized suggestion for which path—healing, writing, or ceremony might best support you right now.</p>
+            
+            <div class="sparkle">✨</div>
+            
+            <a href="#" class="secondary-cta-button">Take the "Find Your Path" Quiz</a>
+            <p style="margin-top: 1rem; font-style: italic;">Takes less than 2 minutes to complete.</p>
+        </div>
+    </section>
+
+    <!-- Meet Anna Section -->
+    <section class="meet-anna">
+        <div class="container">
+            <div class="anna-content">
+                <div class="anna-image">
+                    <img src="Anna_Brooke_2023_6728.jpg" alt="Anna Brooke - Your Guide Through Life's Transitions">
+                </div>
+                <div class="anna-text">
+                    <h2>Meet Anna</h2>
+                    <p class="section-subheading" style="text-align: left;">Your Guide Through Life's Transitions</p>
+                    <p>I believe we are all here to connect to our inner purpose and make our unique magic happen. Through the practices of self-love, breathwork, movement and conscious choice, I create spaces of compassion that foster self-acceptance and self awareness.</p>
+                    
+                    <p>I believe we are each whole, extraordinary beings with sacred opportunities for growth and self reclamation in every moment. It is my intention to support the blossoming, growth and unfoldment of the sacred, conscious self within each one of us, one step at a time.</p>
+                    
+                    <p>Anna started her healing path in 2001 and has helped people through transitions big and small for over twenty years. Whether you are navigating major life changes or a series of small shifts, Anna's work offers a soft place for you to land.</p>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#contact" class="cta-button">Book a Free Connection Call - 15 minutes</a>
+                    </div>
+                    
+                    <div class="alternative-cta" style="margin-top: 2rem; text-align: center;">
+                        <p style="margin-bottom: 0.5rem; font-style: italic; color: var(--text-color);">Not ready to book a call yet?</p>
+                        <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-color);">You can begin with a free 21-day self-care journey—delivered straight to your inbox.</p>
+                        <a href="https://annabrooke.mykajabi.com/opt-in" class="secondary-cta-button" target="_blank" rel="noopener">💌Join 21 Days of Self-Care »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </section> <!-- End Parallax Services Wrapper -->
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2>What People Are Saying</h2>
+            <p class="section-subheading">Real Stories from Real People</p>
+            
+            <div class="reviews-widget">
+                <script type='text/javascript' src='https://reputationhub.site/reputation/assets/review-widget.js'></script>
+                <iframe class='lc_reviews_widget' src='https://reputationhub.site/reputation/widgets/review_widget/jNqy5QsBJRJ9cjslwRNp?widgetId=688bc436d730b4324962d251' frameborder='0' scrolling='no' style='min-width: 100%; width: 100%;'></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subheading">Answers to Your Questions</p>
+            
+            <div class="faq-item">
+                <div class="faq-question">What services does Anna Brooke Healing offer for people going through life transitions?</div>
+                <div class="faq-answer">Anna Brooke Healing offers three main paths: Healing & Growth through breathwork and counseling, Writing & Creativity exploration for processing transitions, and Weddings & Life Ceremonies for major life moments. Each path is designed to support you wherever you are in your journey.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How can breathwork—especially Rebirthing Breathwork—help with emotional healing or grief?</div>
+                <div class="faq-answer">Breathwork is a powerful tool for accessing and releasing stored emotions, trauma, and grief. Rebirthing Breathwork specifically helps you reconnect with your natural breathing patterns while creating a safe space for emotional processing and healing.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Who is Anna Brooke Healing for?</div>
+                <div class="faq-answer">Anna's work is for anyone navigating life's transitions—whether you're healing old wounds, seeking creative expression, going through major life changes, or simply wanting to reconnect with your inner truth and purpose.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does healing through writing and creative expression work at Anna Brooke Healing?</div>
+                <div class="faq-answer">Writing and creative expression provide powerful pathways for self-discovery and healing. Through workshops, coaching, and soulful writing practices, you'll explore your inner truth while unlocking personal growth and creative potential.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I book a personalized ceremony or wedding officiant in Maine?</div>
+                <div class="faq-answer">Yes! Anna crafts bespoke ceremonies that honor the sacredness of your journey. Whether for weddings, life transitions, or other meaningful moments, each ceremony is personalized to reflect your unique truth and story.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How is Anna Brooke Healing different from traditional therapy or coaching?</div>
+                <div class="faq-answer">Anna's approach is integrative, combining breathwork, empowerment counseling, creative expression, and spiritual practices. It's designed to help you reconnect with your inner wisdom and create lasting transformation through compassionate, holistic healing.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><a href="mailto:anna@annabrookehealing.com" target="_blank" rel="noopener">anna@annabrookehealing.com</a></p>
+                    <p><a href="tel:+16469434635" target="_blank" rel="noopener">(646) 943-4635</a></p>
+                    <p>PO BOX 59, Newcastle, ME 04553</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/annabrookehealing/?locale=fo_FO" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+                        <a href="https://www.instagram.com/p/DCqHiGHtWF8/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">i</a>
+                        <a href="https://www.linkedin.com/in/anna-brooke-830972106/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+                        <a href="https://www.youtube.com/channel/UCLc30fZa73cIYt0lHD4-qZw" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener">y</a>
+                        <a href="mailto:anna@annabrookehealing.com" class="social-icon" aria-label="Email">@</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home" target="_blank" rel="noopener">Home</a>
+                    <a href="#about" target="_blank" rel="noopener">About</a>
+                    <a href="#services" target="_blank" rel="noopener">Services</a>
+                    <a href="#contact" target="_blank" rel="noopener">Contact</a>
+                    <a href='/privacy' rel='noopener' target='_blank'>Privacy Policy</a>
+                    <a href='/cookies' rel='noopener' target='_blank'>Cookie Policy</a>
+                    <a href='/terms' rel='noopener' target='_blank'>Terms & Conditions</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Started</h3>
+                    <a href="#" target="_blank" rel="noopener">Book a Free Connection Call</a>
+                    <a href="#" target="_blank" rel="noopener">Take the Find Your Path Quiz</a>
+                    <a href="https://annabrooke.mykajabi.com/opt-in" target="_blank" rel="noopener">Join 21 Days of Self-Care</a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="Join my newsletter for monthly insights">Join my newsletter for monthly insights</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anna Brooke Healing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal Styles -->
+<style>
+  .booking-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.5); backdrop-filter: blur(3px); z-index: 9999; padding: 24px; overflow: auto; -webkit-overflow-scrolling: touch; }
+  .booking-modal.is-open { display: flex; animation: bookingModalFadeIn 200ms ease-out; }
+  @keyframes bookingModalFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .booking-modal__content { position: relative; width: min(100%, 900px); max-height: 95vh; background: var(--background-color, #f2ede2); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); overflow: auto; -webkit-overflow-scrolling: touch; border: 1px solid rgba(22,74,80,0.15); }
+  .booking-modal__body { padding: 0; }
+  .booking-modal__body iframe { width: 100%; display: block; min-height: 420px; }
+  .booking-modal__close { position: absolute; top: 10px; right: 10px; border: none; background: rgba(255,255,255,0.9); color: var(--primary-color, #164a50); width: 40px; height: 40px; border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: transform 0.15s ease; }
+  .booking-modal__close:hover { transform: scale(1.06); }
+  .booking-modal__overlay { position: absolute; inset: 0; }
+  @media (max-width: 640px) { .booking-modal__content { width: 100%; border-radius: 12px; } .booking-modal__body iframe { height: 80vh; min-height: 420px; } }
+  @media (max-width: 420px) { .booking-modal { padding: 12px; } .booking-modal__content { border-radius: 10px; } }
+</style>
+
+<!-- Booking Modal Markup -->
+<div id="bookingModal" class="booking-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="booking-modal__overlay" data-close-modal></div>
+  <div class="booking-modal__content" role="document">
+    <button class="booking-modal__close" aria-label="Close" data-close-modal>&times;</button>
+    <div class="booking-modal__body">
+      <iframe src="https://link.actionpotential.ai/widget/booking/QiIakS9sdFhsXtiJaRGN" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="D5N0qRcebNeCpyJPxzuR_1754838485811"></iframe>
+      <script src="https://link.actionpotential.ai/js/form_embed.js" type="text/javascript"></script>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal Script -->
+<script>
+  (function(){
+    const modal = document.getElementById('bookingModal');
+    if (!modal) return;
+    const closeSelectors = '[data-close-modal]';
+
+    function openBookingModal(){
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal(){
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+
+    modal.addEventListener('click', function(e){
+      if (e.target.matches(closeSelectors)) closeBookingModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeBookingModal();
+    });
+
+    function attachBookingTriggers(){
+      const maybeTriggers = Array.from(document.querySelectorAll('a, button'));
+      const triggers = maybeTriggers.filter(function(el){
+        const text = (el.textContent || '').trim();
+        return /book a free connection/i.test(text);
+      });
+      triggers.forEach(function(el){
+        el.addEventListener('click', function(e){
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          openBookingModal();
+        }, true); // capture to beat smooth-scroll handlers
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', attachBookingTriggers);
+    } else {
+      attachBookingTriggers();
+    }
+  })();
+</script>
+
+<!-- Quiz Modal Styles -->
+<style>
+  .quiz-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.5); backdrop-filter: blur(3px); z-index: 9999; padding: 24px; overflow: auto; -webkit-overflow-scrolling: touch; }
+  .quiz-modal.is-open { display: flex; animation: quizFadeIn 180ms ease-out; }
+  @keyframes quizFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .quiz-modal__content { position: relative; width: min(100%, 900px); max-height: 95vh; background: var(--background-color, #f2ede2); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); overflow: auto; -webkit-overflow-scrolling: touch; border: 1px solid rgba(22,74,80,0.15); }
+  .quiz-modal__header { padding: 20px 24px; border-bottom: 1px solid rgba(22,74,80,0.12); }
+  .quiz-modal__title { font-family: 'ITC Clearface', serif; font-size: 1.5rem; color: var(--primary-color, #164a50); }
+  .quiz-modal__body { padding: 16px 20px 24px; }
+  .quiz-step { display: none; }
+  .quiz-step.active { display: block; }
+  .quiz-question { font-family: 'ITC Clearface', serif; font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--primary-color, #164a50); }
+  .quiz-options { display: grid; gap: 10px; margin-bottom: 1rem; }
+  .quiz-option { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; background: rgba(22,74,80,0.05); border: 1px solid rgba(22,74,80,0.12); border-radius: 10px; cursor: pointer; }
+  .quiz-option input { margin-top: 4px; }
+  .quiz-controls { display: flex; justify-content: space-between; gap: 10px; margin-top: 8px; }
+  .quiz-btn { appearance: none; border: none; padding: 12px 18px; border-radius: 10px; background: var(--sea-color, #164a50); color: #fff; cursor: pointer; font-weight: 600; }
+  .quiz-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+  .quiz-btn.secondary { background: rgba(22,74,80,0.1); color: var(--sea-color, #164a50); }
+  .quiz-result { text-align: left; }
+  .quiz-result h3 { font-family: 'ITC Clearface', serif; font-size: 1.4rem; color: var(--primary-color, #164a50); margin-bottom: 0.5rem; }
+  .quiz-result p { margin-bottom: 0.75rem; }
+  .quiz-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .quiz-modal__close { position: absolute; top: 10px; right: 10px; border: none; background: rgba(255,255,255,0.9); color: var(--primary-color, #164a50); width: 40px; height: 40px; border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  @media (max-width: 640px) {
+    .quiz-modal__content { width: 100%; border-radius: 12px; }
+    .quiz-modal { padding: 12px; }
+    .quiz-modal__header { padding: 16px; }
+    .quiz-modal__body { padding: 12px 14px 18px; }
+    .quiz-btn { width: 100%; justify-content: center; }
+  }
+</style>
+
+<!-- Quiz Modal Markup -->
+<div id="quizModal" class="quiz-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="quiz-modal__content" role="document">
+    <button class="quiz-modal__close" aria-label="Close" data-quiz-close>&times;</button>
+    <div class="quiz-modal__header">
+      <div class="quiz-modal__title">Find Your Path Quiz</div>
+    </div>
+    <div class="quiz-modal__body">
+      <form id="pathQuizForm" novalidate>
+        <div class="quiz-step active" data-step="1">
+          <div class="quiz-question">What best describes where you are right now?</div>
+          <label class="quiz-option"><input type="radio" name="q1" value="healing"> I'm processing grief, burnout, anxiety, or seeking emotional healing</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="writing"> I'm drawn to creative expression or feeling blocked in my writing</label>
+          <label class="quiz-option"><input type="radio" name="q1" value="ceremony"> I'm marking a major life moment and want a meaningful ceremony</label>
+          <div class="quiz-controls"><button type="button" class="quiz-btn" data-next disabled>Next</button></div>
+        </div>
+        <div class="quiz-step" data-step="2">
+          <div class="quiz-question">What kind of support feels most aligned?</div>
+          <label class="quiz-option"><input type="radio" name="q2" value="healing"> Somatic practices like breathwork, gentle presence, and emotional integration</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="writing"> Guidance, structure, and reflection through writing or creativity</label>
+          <label class="quiz-option"><input type="radio" name="q2" value="ceremony"> Personalized ritual that honors a transition or milestone</label>
+          <div class="quiz-controls"><button type="button" class="quiz-btn secondary" data-prev>Back</button><button type="button" class="quiz-btn" data-next disabled>Next</button></div>
+        </div>
+        <div class="quiz-step" data-step="3">
+          <div class="quiz-question">How would you like to begin?</div>
+          <label class="quiz-option"><input type="radio" name="q3" value="healing"> A gentle 1:1 conversation to explore what's present</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="writing"> A guided class or practice to build momentum</label>
+          <label class="quiz-option"><input type="radio" name="q3" value="ceremony"> Planning a ceremony that reflects my truth</label>
+          <div class="quiz-controls"><button type="button" class="quiz-btn secondary" data-prev>Back</button><button type="button" class="quiz-btn" data-next disabled>Next</button></div>
+        </div>
+        <div class="quiz-step" data-step="4">
+          <div class="quiz-question">What outcome are you most seeking right now?</div>
+          <label class="quiz-option"><input type="radio" name="q4" value="healing"> Emotional clarity, peace, and self-acceptance</label>
+          <label class="quiz-option"><input type="radio" name="q4" value="writing"> Self-expression, creative flow, and inner truth through words</label>
+          <label class="quiz-option"><input type="radio" name="q4" value="ceremony"> A sacred, personalized way to honor a life transition</label>
+          <div class="quiz-controls"><button type="button" class="quiz-btn secondary" data-prev>Back</button><button type="submit" class="quiz-btn" disabled>See My Path</button></div>
+        </div>
+        <div class="quiz-step" data-step="result">
+          <div class="quiz-result" id="quizResult"></div>
+          <div class="quiz-actions" id="quizActions"></div>
+          <div class="quiz-controls"><button type="button" class="quiz-btn secondary" data-restart>Restart Quiz</button><button type="button" class="quiz-btn" data-quiz-close>Close</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Modal Script -->
+<script>
+  (function(){
+    const quizModal = document.getElementById('quizModal');
+    const form = document.getElementById('pathQuizForm');
+    const closeButtons = quizModal.querySelectorAll('[data-quiz-close]');
+
+    function openQuizModal(){
+      quizModal.classList.add('is-open');
+      quizModal.setAttribute('aria-hidden','false');
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeQuizModal(){
+      quizModal.classList.remove('is-open');
+      quizModal.setAttribute('aria-hidden','true');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+
+    closeButtons.forEach(btn => btn.addEventListener('click', closeQuizModal));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && quizModal.classList.contains('is-open')) closeQuizModal();
+    });
+
+    function attachQuizTrigger(){
+      const triggers = Array.from(document.querySelectorAll('a, button')).filter(el => /find your path/i.test((el.textContent||'').trim()));
+      triggers.forEach(el => {
+        el.addEventListener('click', function(e){
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          openQuizModal();
+        }, true);
+      });
+    }
+
+    function setStep(step){
+      quizModal.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+      const target = quizModal.querySelector('.quiz-step[data-step="'+ step +'"]');
+      if (target) target.classList.add('active');
+      // Enable/disable next buttons based on selection
+      const stepEl = target;
+      if (!stepEl) return;
+      const nextBtn = stepEl.querySelector('[data-next]') || stepEl.querySelector('[type="submit"]');
+      if (nextBtn) {
+        const radios = stepEl.querySelectorAll('input[type="radio"]');
+        const update = () => { nextBtn.disabled = !Array.from(radios).some(r => r.checked); };
+        radios.forEach(r => r.addEventListener('change', update));
+        update();
+      }
+    }
+
+    function nextStep(){
+      const active = quizModal.querySelector('.quiz-step.active');
+      const step = active ? active.getAttribute('data-step') : '1';
+      if (step === '1') setStep('2');
+      else if (step === '2') setStep('3');
+      else if (step === '3') setStep('4');
+    }
+
+    function prevStep(){
+      const active = quizModal.querySelector('.quiz-step.active');
+      const step = active ? active.getAttribute('data-step') : '1';
+      if (step === '4') setStep('3');
+      else if (step === '3') setStep('2');
+      else if (step === '2') setStep('1');
+    }
+
+    quizModal.addEventListener('click', function(e){
+      if (e.target.matches('[data-next]')) nextStep();
+      if (e.target.matches('[data-prev]')) prevStep();
+      if (e.target.matches('[data-restart]')) { form.reset(); setStep('1'); }
+    });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(form);
+      const values = ['q1','q2','q3','q4'].map(k => data.get(k)).filter(Boolean);
+      const scores = { healing: 0, writing: 0, ceremony: 0 };
+      values.forEach(v => { if (scores[v] != null) scores[v]++; });
+      const ranking = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+      const top = ranking[0] ? ranking[0][0] : 'healing';
+
+      const resultBox = document.getElementById('quizResult');
+      const actions = document.getElementById('quizActions');
+      actions.innerHTML = '';
+      let title = '';
+      let desc = '';
+      let linkHref = '';
+      let services = '';
+      if (top === 'healing') {
+        title = 'Recommended Path: Healing & Growth';
+        desc = 'Begin with breath, presence, and compassionate support to heal and reconnect with yourself.';
+        linkHref = 'services/healing-and-growth/';
+        services = 'Suggested services: Breathwork, 1:1 Emotional Healing Sessions, The Forgiveness Lab.';
+      } else if (top === 'writing') {
+        title = 'Recommended Path: Writing & Creativity';
+        desc = 'Explore your inner truth through writing, coaching, and creative practices that unlock growth.';
+        linkHref = 'services/writing-and-creativity/';
+        services = 'Suggested services: Writing coaching, creative workshops, reflective practices.';
+      } else {
+        title = 'Recommended Path: Weddings & Life Ceremonies';
+        desc = 'Honor a milestone with a ceremony crafted with heart and aligned with your truth.';
+        linkHref = 'services/meaningful-life-ceremonies/';
+        services = 'Suggested services: Personalized ceremonies and ritual design.';
+      }
+      resultBox.innerHTML = '<h3>'+ title +'</h3><p>'+ desc +'</p><p>'+ services +'</p>';
+      const explore = document.createElement('a');
+      explore.className = 'quiz-btn';
+      explore.href = linkHref;
+      explore.textContent = 'Explore this path';
+      const book = document.createElement('a');
+      book.className = 'quiz-btn secondary';
+      book.href = '#';
+      book.textContent = 'Book a Free Connection Call';
+      actions.appendChild(explore);
+      actions.appendChild(book);
+
+      // Reuse existing booking modal trigger by text
+      book.addEventListener('click', function(ev){ ev.preventDefault(); ev.stopImmediatePropagation();
+        const trigger = Array.from(document.querySelectorAll('a,button')).find(el=>/book a free connection/i.test((el.textContent||'').trim()));
+        if (trigger) trigger.click();
+      }, true);
+
+      setStep('result');
+    });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function(){ attachQuizTrigger(); setStep('1'); });
+    } else {
+      attachQuizTrigger(); setStep('1');
+    }
+  })();
+</script>
+
+    <!-- Newsletter Modal Styles -->
+<style>
+  .newsletter-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.5); backdrop-filter: blur(3px); z-index: 10000; padding: 24px; overflow: auto; -webkit-overflow-scrolling: touch; }
+  .newsletter-modal.is-open { display: flex; animation: newsletterFadeIn 180ms ease-out; }
+  @keyframes newsletterFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .newsletter-modal__content { position: relative; width: min(100%, 640px); max-height: 95vh; background: var(--background-color, #f2ede2); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); overflow: auto; -webkit-overflow-scrolling: touch; border: 1px solid rgba(22,74,80,0.15); }
+  .newsletter-modal__header { padding: 16px 20px; border-bottom: 1px solid rgba(22,74,80,0.12); }
+  .newsletter-modal__title { font-family: 'ITC Clearface', serif; font-size: 1.4rem; color: var(--primary-color, #164a50); }
+  .newsletter-modal__body { padding: 0; }
+  .newsletter-modal__close { position: absolute; top: 10px; right: 10px; border: none; background: rgba(255,255,255,0.9); color: var(--primary-color, #164a50); width: 40px; height: 40px; border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  @media (max-width: 640px) { .newsletter-modal__content { width: 100%; border-radius: 12px; } .newsletter-modal { padding: 12px; } }
+</style>
+
+<!-- Newsletter Modal Markup -->
+<div id="newsletterModal" class="newsletter-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="newsletter-modal__content" role="document">
+    <button class="newsletter-modal__close" aria-label="Close" data-newsletter-close>&times;</button>
+    <div class="newsletter-modal__body">
+      <iframe
+        src="https://link.actionpotential.ai/widget/form/jwRgs5E4BhBtZ1mdTKxb"
+        style="width:100%;height:100%;border:none;border-radius:0"
+        id="inline-jwRgs5E4BhBtZ1mdTKxb" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="ABH Newsletter"
+        data-height="496"
+        data-layout-iframe-id="inline-jwRgs5E4BhBtZ1mdTKxb"
+        data-form-id="jwRgs5E4BhBtZ1mdTKxb"
+        title="ABH Newsletter">
+      </iframe>
+      <script src="https://link.actionpotential.ai/js/form_embed.js"></script>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter Modal Script -->
+<script>
+  (function(){
+    const modal = document.getElementById('newsletterModal');
+    if (!modal) return;
+    const closeBtns = modal.querySelectorAll('[data-newsletter-close]');
+    const sessionKey = 'abh_newsletter_shown';
+    const coolDownDays = 7; // show at most weekly
+    function inCooldown(){
+      try {
+        const t = sessionStorage.getItem(sessionKey) || localStorage.getItem(sessionKey);
+        if (!t) return false;
+        const last = Number(t);
+        return Date.now() - last < coolDownDays*24*60*60*1000;
+      } catch(e){ return false; }
+    }
+
+    function anyModalOpen(){ return document.querySelector('.booking-modal.is-open, .quiz-modal.is-open'); }
+    function openNewsletter(){
+      if (modal.classList.contains('is-open')) return;
+      if (anyModalOpen()) return;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden','false');
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      try { sessionStorage.setItem(sessionKey, String(Date.now())); localStorage.setItem(sessionKey, String(Date.now())); } catch(e){}
+    }
+    function closeNewsletter(){
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden','true');
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }
+    closeBtns.forEach(b=>b.addEventListener('click', closeNewsletter));
+    document.addEventListener('keydown', e=>{ if (e.key==='Escape' && modal.classList.contains('is-open')) closeNewsletter(); });
+
+    // Attach visible CTA triggers
+    function attachNewsletterTriggers(){
+      const triggers = Array.from(document.querySelectorAll('a,button')).filter(el => /newsletter|subscribe/i.test((el.textContent||'').trim()));
+      triggers.forEach(el => {
+        el.addEventListener('click', function(e){ e.preventDefault(); e.stopImmediatePropagation(); openNewsletter(); }, true);
+      });
+    }
+
+    // Exit-intent and fallback timers (once per session)
+    function setupExitIntent(){
+      if (inCooldown()) return;
+      let shown = false;
+      function showOnce(){ if (shown) return; shown = true; openNewsletter(); }
+      // Desktop: mouse leaves viewport top
+      let lastMouseY = window.innerHeight;
+      document.addEventListener('mouseout', function(e){ if (e.clientY <= 0) showOnce(); });
+      document.addEventListener('mousemove', function(e){ lastMouseY = e.clientY; if (e.clientY <= 10) showOnce(); }, { passive: true });
+      document.addEventListener('mouseleave', function(){ if (lastMouseY <= 10) showOnce(); }, { passive: true });
+      window.addEventListener('blur', showOnce);
+      // Fallback: after 30s
+      setTimeout(showOnce, 30000);
+      // Scroll depth > 50%
+      function onScroll(){
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollable > 0 && window.scrollY/scrollable > 0.5){ showOnce(); window.removeEventListener('scroll', onScroll); }
+      }
+      window.addEventListener('scroll', onScroll);
+    }
+
+    if (document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', function(){ attachNewsletterTriggers(); setupExitIntent(); });
+    } else { attachNewsletterTriggers(); setupExitIntent(); }
+  })();
+</script>
+
+<script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Toggle current answer
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            
+            // Hero parallax
+            const parallaxBg = document.querySelector('.hero-parallax-bg');
+            if (parallaxBg) {
+                const speed = scrolled * 0.5;
+                parallaxBg.style.transform = `translateY(${speed}px)`;
+            }
+            
+            // Services parallax
+            const servicesParallaxBg = document.querySelector('.parallax-services-bg');
+            if (servicesParallaxBg) {
+                const servicesSection = document.querySelector('.parallax-services-wrapper');
+                const rect = servicesSection.getBoundingClientRect();
+                const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isInView) {
+                    const speed = (scrolled - servicesSection.offsetTop) * 0.18; // slightly gentler
+                    servicesParallaxBg.style.transform = `translate3d(0, ${speed}px, 0)`; // GPU transform
+                }
+            }
+        });
+    </script>
+
+    <!-- Mobile Navigation JavaScript -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.remove('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobileNav');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            
+            if (!mobileNav.contains(event.target) && !toggleButton.contains(event.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- Start Engagement Widget Script -->
+    <script>
+        window.engagementContextExtra = {
+            // Add your custom data here
+        };
+        (function (w, i, d, g, e, t) {
+            const s = w.createElement(i);
+            d.forEach(([k, v]) => s.setAttribute(k, v));
+            w.body.appendChild(s);
+        })(
+            document,
+            'script',
+            [['async', 1],
+                ['crossorigin', 1],
+                ['type', 'module'],
+                ['id', 'engagementWidget'],
+                ['src', 'https://cdn.chatwidgets.net/widget/livechat/bundle.js'],
+                ['data-env', '//graph.mycrmsupport.net'],
+                ['data-instance', 'aIub4sWb7tR2KUcj'],
+                ['data-container', '#engagement-widget-container']]
+        );
+    </script>
+    <!-- End Engagement Widget Script -->
+</body>
+</html>
