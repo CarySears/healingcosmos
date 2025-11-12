@@ -432,6 +432,9 @@
         border: 1px solid rgba(77, 61, 208, 0.08);
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
 
       .service-card::after {
@@ -454,13 +457,14 @@
       }
 
       .service-card p {
-        min-height: 5rem;
+        min-height: 0;
       }
 
       .service-meta {
         font-size: 0.9rem;
         color: rgba(21, 20, 20, 0.6);
         margin-bottom: 1.5rem;
+        margin-top: auto;
       }
 
       .supporting-tag {
